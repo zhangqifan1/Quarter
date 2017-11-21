@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@drawable/b1"
+        android:layout_width="match_parent"
+        android:layout_height="161dp">
+        <com.v.quarter.CustomViews.ShapeImageView
+            android:src="@drawable/def"
+            android:onClick="ToLogin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentBottom="true"
+            app:shape_type="round"
+            android:id="@+id/QQHead"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="85dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@id/QQHead"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@id/QQHead"
+            android:text="编辑个性签名" />
+        <TextView
+            android:text="路人甲表示不服"
+            android:onClick="ToLogin"
+            android:layout_marginLeft="18dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/QQHead"
+            android:id="@+id/QQName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+        <ImageView
+            android:onClick="ToLogin"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="73dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/QQSex"
+            android:src="@drawable/women"
+            android:layout_width="45dp"
+            android:layout_height="43dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:onClick="ToMyCare"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:src="@drawable/l1"
+                android:layout_marginLeft="27dp"
+                android:layout_width="21dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/textCare"
+                android:textStyle="bold"
+                android:layout_marginLeft="13dp"
+                android:text="我的关注"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="117dp"
+                android:src="@drawable/you"
+                android:layout_width="14dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="ToMyCollection"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:src="@drawable/l2"
+                android:layout_marginLeft="27dp"
+                android:layout_width="21dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/textCollect"
+                android:textStyle="bold"
+                android:layout_marginLeft="13dp"
+                android:text="我的收藏"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="117dp"
+                android:src="@drawable/you"
+                android:layout_width="14dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="ToSeachFriend"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:src="@drawable/l3"
+                android:layout_marginLeft="27dp"
+                android:layout_width="21dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/textSearchFridend"
+                android:textStyle="bold"
+                android:layout_marginLeft="13dp"
+                android:text="搜索好友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="117dp"
+                android:src="@drawable/you"
+                android:layout_width="14dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="ToMessageNotify"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:src="@drawable/l4"
+                android:layout_marginLeft="27dp"
+                android:layout_width="21dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/textMessageNotify"
+                android:textStyle="bold"
+                android:layout_marginLeft="13dp"
+                android:text="消息通知"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="117dp"
+                android:src="@drawable/you"
+                android:layout_width="14dp"
+                android:layout_height="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/moon"
+                android:src="@drawable/moondark"
+                android:layout_marginLeft="27dp"
+                android:layout_width="21dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/tvMode"
+                android:layout_marginLeft="13dp"
+                android:text="夜间模式"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:onClick="Moon"
+                android:button="@null"
+                android:background="@drawable/onoffselector"
+                android:id="@+id/onoff"
+                android:layout_marginLeft="117dp"
+                android:src="@drawable/close"
+                android:layout_width="30dp"
+                android:layout_height="28dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:onClick="MyWorks"
+                android:src="@drawable/w1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:textSize="18sp"
+                android:text="我的作品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:onClick="MySettings"
+                android:src="@drawable/w2"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:text="设置"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

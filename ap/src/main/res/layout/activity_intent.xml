@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b5"
+    tools:context="com.v.quarter.Activities.IntentActivity">
+    <RelativeLayout
+        android:background="@color/colorTitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:text="取消"
+            android:textColor="#fff"
+            android:background="@drawable/buttonnostroke"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:text="创作"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:background="@drawable/yuan"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@drawable/sp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:background="@drawable/yuan"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:onClick="ShuoShuo"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:ignore="OnClick" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

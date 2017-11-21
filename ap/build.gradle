@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.v.quarter"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //沉浸式的依赖
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //底部导航栏
+    compile 'com.hjm:BottomTabBar:1.1.1'
+    //Retrofit的依赖
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    //RxJava2的依赖
+    compile 'io.reactivex.rxjava2:rxjava:+'
+    compile 'io.reactivex.rxjava2:rxandroid:+'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    //俩个存储库依赖  第二个 在Cookie处用到
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.orhanobut:hawk:2.0.1'
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/umeng_social_tool.jar')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation 'de.greenrobot:eventbus:3.0.0-beta1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.0.0'
+    implementation files('libs/glide-3.6.1.jar')
+    //Banner依赖
+    compile 'com.youth.banner:banner:1.4.10'
+    //最新版本
+    implementation files('libs/MobCommons-2017.0801.1522.jar')
+    implementation files('libs/MobTools-2017.0801.1522.jar')
+    implementation files('libs/ShareSDK-Core-3.0.1.jar')
+    implementation files('libs/ShareSDK-QQ-3.0.1.jar')
+
+    compile 'cn.jzvd:jiaozivideoplayer:6.1.2'
+}

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Quarter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">侧滑页已打开</string>
+    <string name="close">侧滑页已关闭</string>
+    <string name="tuijian">推荐</string>
+    <string name="UserPwd">密码</string>
+    <string name="UserName">账号</string>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="setting_preference_height">46dp</dimen>
+
+</resources>
